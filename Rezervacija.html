@@ -1,0 +1,86 @@
+﻿	<!DOCTYPE html>
+
+
+	<html>
+	<head> <title> Rezervacija</title> 
+		<link rel="stylesheet" href="bootstrap/css/bootstrap.css"  type="text/css"/>
+		<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css"  type="text/css"/>
+		<link rel="stylesheet" href="bootstrap/css/justified-nav.css"  type="text/css"/>
+		<link rel="stylesheet" href="bootstrap/css/bootstrap.max.css"  type="text/css"/>
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,400&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Fauna+One&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+
+		<link rel="stylesheet" href="mojcss.css"  type="text/css"/>
+		</head>
+
+		<body>
+			<div class="container">
+				<div class="row">
+					<div class="span12"> 
+							<h1> <a href="index.php">Lane i Lane</a></h1></div>
+
+					</div>
+					
+					
+					<div class="row">
+						<div class="span12"> 
+								<ul class="nav nav-tabs">
+								<li><a href="IspisJela.php">Hrana</a></li>
+								<li><a href="IspisPica.php">Piće</a></li>
+								<li><a href="Rezervacija.html">Rezervacija</a></li>
+								<li><a href="Onama.html">O nama</a></li>
+							</ul>
+						</div>
+					</div>
+					
+					<!-- forma za rezervaciju--> 
+					<div class="row">
+						<div class="span8"> 
+							<p class="poziv"> Ako želite jesti kod nas,osigurajte svoj stol ovog trenutka,u samo nekoliko klikova. </p>
+							<br>
+							<form role="form" action="rez.php" method="POST">
+								<div class="form-group">
+									<label> Broj osoba: </label>
+									<input type="text" name="broj">
+
+								</div>
+								<div class="form-group">
+									<label> Datum: </label>
+									<input type="date" name="datum">
+
+								</div>
+
+								<div class="form-group">
+									<label> Vrijeme: </label>
+									<input type="time" name="vrijeme">
+
+								</div>
+								<div class="form-group">
+									<label> Ime i prezime: </label>
+									<input type="text" name="ime">
+
+								</div>
+								<div class="form-group">
+									<label> Kontakt: </label>
+									<input type="text" name="kontakt">
+
+								</div>
+
+
+								<button type="submit" class="btn btn-default">Rezerviraj</button>
+
+							</form>
+						</div>
+					</div>
+				</div>
+			</body>
+
+
+		</div>
+
+		<div id="footer">
+			<div class=" navbar-fixed-bottom">
+				<p class="muted credit"><center>Copyright Lane i lane, 2015.</center></p>
+			</div>
+
+			</html>
